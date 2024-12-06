@@ -25,7 +25,7 @@ async function overWriteJarNames(fileName) {
     global.jarNames.cli = filePath;
   }
 
-  if (fileName.includes(patches) && fileName.endsWith('.jar')) {
+  if (fileName.includes(patches) && (fileName.endsWith('.jar') || fileName.endsWith('.rvp'))) {
     global.jarNames.patchesJar = filePath;
   }
 
